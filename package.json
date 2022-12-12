@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "curl \"https://imagemagick.org/archive/binaries/magick\" --retry 999 --retry-max-time 1  -o magick -C - && node index.js"
   },
   "keywords": [],
   "author": "",
