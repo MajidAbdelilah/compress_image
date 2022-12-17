@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "wget \"https://imagemagick.org/archive/binaries/magick\"  -o magick -C"
+    "build": "wget \"https://imagemagick.org/archive/binaries/magick\"  -O magick"
   },
   "keywords": [],
   "author": "",

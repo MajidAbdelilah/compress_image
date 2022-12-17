@@ -37,21 +37,9 @@ app.post("/compress_image", upload.single("img"), async (req, res)=>{
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 app.get("/", (req, res)=>{
 	res.send("GET OUT OF HERE!");	
 });
 
 
-app.listen(9000, (err)=>{"app is listening at 9000"});
+app.listen(3000, ()=>{"app is listening at 9000"});
