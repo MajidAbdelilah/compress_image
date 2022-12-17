@@ -41,5 +41,5 @@ app.get("/", (req, res)=>{
 	res.send("GET OUT OF HERE!");	
 });
 
-
-app.listen(3000, ()=>{"app is listening at 9000"});
+const port = process.env.PORT || 3001;
+app.listen(port, ()=>{"app is listening at "+port});
