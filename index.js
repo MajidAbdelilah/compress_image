@@ -10,7 +10,7 @@ let number_of_uses = 0;
 
 app.post("/compress_image", upload.single("img"), async (req, res)=>{
 	let file = req.file.path;
-	await	exec("./magick "+file+
+	await	exec("./squashfs-root/AppRun "+file+
 	" -strip -interlace Plane  -quality 70% -define jpeg:dct-method=float "
 	+file+".jpg", async (err, stdout, stderr) => {
 
